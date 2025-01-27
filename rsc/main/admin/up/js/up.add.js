@@ -23,7 +23,7 @@ const KueDB = {
             },
 
             loadDataFromJSON: function() {
-                fetch('js/json/judul.json')
+                fetch('data.json')
                     .then(response => response.json())
                     .then(data => {
                         this.defaultData = data.KueDB.defaultData; // Isi defaultData dengan data dari JSON
@@ -296,7 +296,7 @@ const PlastikDB = {
             },
 
             loadDataFromJSON: function() {
-                fetch('js/json/judul.json')
+                fetch('data.json')
                     .then(response => response.json())
                     .then(data => {
                         this.defaultData = data.PlastikDB.defaultData; // Isi defaultData dengan data dari JSON
